@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área y perímetro</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        label, input, button { display: block; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Área y perímetro</h1>
+    <p>consigna: Declara una variable con el lado de un cuadrado y calcula su área y perímetro.</p>
+
+    <label  for="longitud_lado" >Ingresa la longitud del lado en cm</label>
+    <input type="number"  id="longitud" placeholder="5..." step="1" >
+
+    <button id="calcularBtn">calcular</button>
+
+    <p> Area: <span id="areaResultado"></span> </p>
+    <p>Perimetro: <span id="perimetroResultado"></span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
