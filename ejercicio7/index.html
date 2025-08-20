@@ -7,8 +7,20 @@
 </head>
 <body>
     <h1>Recorte de texto:</h1>
-    <p>Crea una función que devuelva un texto recortado según el número de caracteres indicado. Por ejemplo, miFuncion("Hola Mundo", 4) debería devolver "Hola".</p>
+    <p>Crea una función que devuelva un texto recortado según el número de caracteres indicado.
+        Por ejemplo, miFuncion("Hola Mundo", 4) debería devolver "Hola".</p>
 
+    <label for="ingresar_el_text">Ingresa el texto:</label>
+    <input id="texto" type="text" placeholder="Texto ingresado aqui...">
+
+    <hr>
+    <label for="Caracteres_Recortar">Caracteres que quieres recortar</label>
+    <input type="number" id="charRecortar" placeholder="4.." step="1">
+    <hr>
+
+    <button id="recortar">Recortar</button>
+
+    <p>El texto final es: <span id="resultado"></span></p>
     <script src="script.js"></script>
 </body>
 </html>
