@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetidor de texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+    <h1>Repetidor de texto</h1>
+    <p>Consigna: Escribe una función que repita un texto un número determinado de veces. Por ejemplo, miFuncion('Hola Mundo', 3) debería devolver "Hola Mundo Hola Mundo Hola Mundo"</p>
+    <hr>
+    <label for="Escribe el texto">Escribe el texto a repetir</label>
+    <input type="text" id="text" placeholder="Escribe aqui el text...">
+    <hr>
+
+    <label for="veces que se repetira el texto">Escribe el numero de veces que se repetira el texto</label>
+    <input type="number" id="number" step="1" min="0" placeholder="2..">
+    <hr>
+
+    <button id="repeat">Repetir</button>
+        
+    <p>Tu texto repetido es: <span id="result"></span></p>
+    <script src="script.js" ></script>
+<body>
+    
+</body>
+</html>
