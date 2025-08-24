@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de imágenes interactiva</title>
+    <style>
+        body{
+            background-color: lightslategray;
+            padding: 20px;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        #imagen_principal_container {
+            margin-bottom: 30px;
+            background-color: #444;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        #imagen_principal {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
+        #imagenes{
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        #imagenes img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #555;
+            border-radius: 8px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        #imagenes img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Galería de imágenes interactiva</h1>
+    <p>Consigna: Crea una galería de imágenes donde al hacer clic en una miniatura, la imagen principal cambie.</p>
+
+    <div id="imagen_principal_container">
+        <img src="imagenes/imagen1.jpg" alt="Imagen Principal" id="imagen_principal">
+    </div>
+
+    <div id="imagenes">
+        <img src="imagenes/imagen1.jpg" alt="Miniatura 1">
+        <img src="imagenes/imagen2.jpg" alt="Miniatura 2">
+        <img src="imagenes/imagen3.jpg" alt="Miniatura 3">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
