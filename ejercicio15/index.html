@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestañas de contenido</title>
+    <style>
+        .content-panel {
+            display: none; /* Por defecto, todos los paneles de contenido están ocultos */
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .content-panel.active {
+            display: block; /* El panel con la clase 'active' se muestra */
+        }
+        
+        .tab-button {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        
+        .tab-button.active {
+            background-color: #e0e0e0;
+            border-bottom: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pestañas de contenido</h1>
+    <p>Consigna: Implementa un sistema de pestañas donde al hacer clic en diferentes botones se muestre un contenido distinto.</p>
+    <div class="tabs-container">
+        <div id = "container"class="tab-buttons">
+            <button class="tab-button active" data-tab="tab1">Pestaña 1</button>
+            <button class="tab-button" data-tab="tab2" >Pestaña 2</button>
+            <button class="tab-button" data-tab="tab3">Pestaña 3</button>
+        </div>
+
+        <div class="tab-content">
+            <div id="tab1" class="content-panel active">
+                <h2>Contenido de la Pestaña 1</h2>
+                <p>Este es el contenido de la primera pestaña. Es visible por defecto.</p>
+            </div>
+            <div id="tab2" class="content-panel">
+                <h2>Contenido de la Pestaña 2</h2>
+                <p>Aquí va la información para la segunda pestaña. Inicialmente oculta.</p>
+            </div>
+            <div id="tab3" class="content-panel">
+                <h2>Contenido de la Pestaña 3</h2>
+                <p>Y este es el contenido de la tercera pestaña. También oculta al principio.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
