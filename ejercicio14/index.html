@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #taskList li.completed {
+            background-color: #e6ffe6; 
+            text-decoration: line-through;
+            color: #888;
+        }
+        .delete-btn{};
+        .complete-checkbox {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;    
+        }
+    </style>
+    <title>"To-Do List" (Lista de tareas)</title>
+</head>
+<body>
+    <h1>"To-Do List" (Lista de tareas)</h1>
+    <p>Condigna: Desarrolla una aplicación de lista de tareas que permita añadir, eliminar y marcar tareas como completadas.</p>
+    <div id="TaskContainer">
+        <input type="text" placeholder="nueva tarea..." id="newTask">
+        <button id="addTask">Agregar</button>
+        <div id="alert"></div>
+        <ul id="taskList">
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
